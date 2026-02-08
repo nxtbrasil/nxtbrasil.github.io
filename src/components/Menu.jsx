@@ -1,15 +1,18 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Menu() {
   return (
-    <header>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/quem-somos">Quem Somos</Link>
-        <Link to="/servicos">Serviços</Link>
-        <Link to="/projetos">Projetos</Link>
-        <Link to="/contato">Fale Conosco</Link>
-      </nav>
+    <header className="header">
+      <div className="header-content">
+        <div className="logo">NXT</div>
+        <nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/quem-somos">Quem Somos</NavLink>
+          <NavLink to="/servicos">Serviços</NavLink>
+          <NavLink to="/projetos">Projetos</NavLink>
+          <NavLink to="/contato">Contato</NavLink>
+        </nav>
+      </div>
     </header>
   )
 }

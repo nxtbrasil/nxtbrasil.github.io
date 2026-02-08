@@ -1,21 +1,10 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-  background: linear-gradient(90deg, #00A3FF, #0057B8);
-  padding: 20px;
-  color: white;
-}
-
-nav a {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section {
-  padding: 60px 20px;
-}
+body{margin:0;font-family:Inter,Arial;background:#f8fafc;color:#0f172a}
+.header{background:linear-gradient(90deg,#007cf0,#0057b8);position:sticky;top:0}
+.header-content{max-width:1200px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between}
+.logo{color:#fff;font-weight:bold;font-size:22px}
+nav a{color:#fff;margin-left:20px;text-decoration:none}
+.container{max-width:1200px;margin:auto;padding:40px 24px}
+.hero{padding:80px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:#fff;padding:24px;border-radius:12px;box-shadow:0 10px 20px rgba(0,0,0,.06)}
+.footer{background:#020617;color:#cbd5f5;text-align:center;padding:24px;margin-top:80px}
