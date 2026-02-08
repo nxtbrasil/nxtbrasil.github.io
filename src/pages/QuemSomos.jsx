@@ -1,1 +1,3 @@
-export default () => <section className='page'><h2>Quem Somos</h2><p>Somos especialistas em tecnologia.</p></section>
+export default function QuemSomos() {
+  return <section><h1>Quem Somos</h1><p>Somos especialistas em inovação digital.</p></section>
+}

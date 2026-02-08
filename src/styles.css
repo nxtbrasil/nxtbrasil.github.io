@@ -1,32 +1,21 @@
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 40px;
-  background: linear-gradient(90deg, #0284ff, #0f172a);
-}
-
-.logo {
+header {
+  background: linear-gradient(90deg, #00A3FF, #0057B8);
+  padding: 20px;
   color: white;
 }
 
-.menu ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.menu a {
+nav a {
   color: white;
+  margin-right: 20px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.page {
-  padding: 40px;
+section {
+  padding: 60px 20px;
 }

@@ -1,1 +1,3 @@
-export default () => <section className='page'><h2>Home</h2><p>Bem-vindo à NXT Tecnologia.</p></section>
+export default function Home() {
+  return <section><h1>NXT Brasil</h1><p>Tecnologia que impulsiona negócios.</p></section>
+}
