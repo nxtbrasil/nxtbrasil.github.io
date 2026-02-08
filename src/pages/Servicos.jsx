@@ -1,0 +1,1 @@
+export default () => <section className='page'><h2>Serviços</h2><p>Desenvolvimento, Cloud, Consultoria.</p></section>

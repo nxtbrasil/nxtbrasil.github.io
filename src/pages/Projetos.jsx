@@ -1,0 +1,1 @@
+export default () => <section className='page'><h2>Projetos</h2><p>Nossos principais projetos.</p></section>

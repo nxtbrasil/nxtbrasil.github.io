@@ -1,0 +1,1 @@
+export default () => <section className='page'><h2>Quem Somos</h2><p>Somos especialistas em tecnologia.</p></section>

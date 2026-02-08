@@ -1,0 +1,1 @@
+export default () => <section className='page'><h2>Fale Conosco</h2><p>contato@nxtbrasil.com</p></section>

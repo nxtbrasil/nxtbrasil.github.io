@@ -1,0 +1,1 @@
+export default () => <section className='page'><h2>Home</h2><p>Bem-vindo à NXT Tecnologia.</p></section>
