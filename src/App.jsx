@@ -1,24 +1,25 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-
-import Home from './pages/Home'
-import QuemSomos from './pages/QuemSomos'
-import Servicos from './pages/Servicos'
-import Projetos from './pages/Projetos'
-import Contato from './pages/Contato'
+import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Services from './components/Services'
+import AboutSection from "./components/AboutSection"
+import LatestProjects from "./components/LatestProjects"
+import ClientLogos from "./components/ClientLogos"
+import AuthorityAndFaq from "./components/AuthorityAndFaq"
+import Footer from "./components/Footer"
+import WhatsAppFlutuante from "./components/WhatsAppFlutuante"
 
 export default function App() {
   return (
-    <HashRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/quem-somos" element={<QuemSomos />} />
-          <Route path="/servicos" element={<Servicos />} />
-          <Route path="/projetos" element={<Projetos />} />
-          <Route path="/contato" element={<Contato />} />
-        </Routes>
-      </Layout>
-    </HashRouter>
+    <>
+      <Header />
+      <Hero />
+      <Services />
+      <AboutSection />
+      <LatestProjects />
+      <ClientLogos/>
+      <AuthorityAndFaq />
+      <Footer />
+      <WhatsAppFlutuante />
+    </>
   )
 }
