@@ -12,6 +12,10 @@ export default function App() {
   return (
     <>
       <Header />
+      
+      {/* ESPAÇADOR PARA O CONTEÚDO NÃO FICAR ATRÁS DO MENU */}
+      <div className="h-20 md:h-24 w-full bg-white" />
+
       <Hero />
       <Services />
       <AboutSection />
