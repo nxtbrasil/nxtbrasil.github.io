@@ -39,20 +39,13 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-6 items-center">
               <a 
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5511945391475?text=Olá! Vim pelo site e gostaria de mais informações."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative bg-black text-white px-10 py-5 rounded-2xl font-bold overflow-hidden transition-all hover:bg-[#0056b3] flex items-center gap-2"
               >
                 Solicitar Orçamento <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
-
-              <button className="flex items-center gap-4 font-bold text-black group">
-                <span className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300">
-                  <Play size={20} fill="currentColor" />
-                </span>
-                Showreel 2026
-              </button>
             </div>
           </div>
 
@@ -70,7 +63,7 @@ export default function Hero() {
                   <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Satisfaction</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-black text-[#0056b3]">150+</div>
+                  <div className="text-4xl font-black text-[#0056b3]">3+</div>
                   <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Projects</div>
                 </div>
               </div>

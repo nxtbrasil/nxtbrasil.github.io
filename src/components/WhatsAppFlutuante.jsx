@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react'; // Ícone de balão de conversa
 export default function WhatsAppFlutuante() {
   return (
     <a
-      href="https://wa.me/5511999999999?text=Olá! Vim pelo site e gostaria de mais informações."
+      href="https://wa.me/5511945391475?text=Olá! Vim pelo site e gostaria de mais informações."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-[999] bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] transition-all duration-300 hover:scale-110 hover:rotate-6 active:scale-95 group"

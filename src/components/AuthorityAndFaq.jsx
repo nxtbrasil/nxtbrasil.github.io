@@ -4,9 +4,9 @@ export default function AuthorityAndFaq() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const stats = [
-    { label: "Projetos Entregues", value: "150+" },
+    { label: "Projetos Entregues", value: "3+" },
     { label: "Anos de Experiência", value: "15+" },
-    { label: "Clientes Satisfeitos", value: "80+" },
+    { label: "Clientes Satisfeitos", value: "5+" },
     { label: "Suporte Ativo", value: "24/7" },
   ];
 
@@ -57,10 +57,15 @@ export default function AuthorityAndFaq() {
             <p className="text-gray-500 text-lg">
               Ainda tem perguntas sobre como a NXT Brasil pode transformar sua operação? Confira as respostas ao lado ou fale diretamente com um consultor.
             </p>
-            <button className="bg-[#0056b3] text-white px-10 py-5 rounded-full font-bold shadow-2xl shadow-blue-500/40 hover:bg-[#004494] hover:scale-105 transition-all inline-flex items-center gap-4">
-              Iniciar Consultoria Gratuita
-              <span className="text-xl">→</span>
-            </button>
+<a 
+  href="https://wa.me/5511945391475?text=Olá! Vim pelo site e gostaria de mais informações."
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="bg-[#0056b3] text-white px-10 py-5 rounded-full font-bold shadow-2xl shadow-blue-500/40 hover:bg-[#004494] hover:scale-105 transition-all inline-flex items-center gap-4 cursor-pointer"
+>
+  Iniciar Consultoria Gratuita
+  <span className="text-xl">→</span>
+</a>
           </div>
 
           {/* Lado Direito: FAQ (Acordeão) */}
