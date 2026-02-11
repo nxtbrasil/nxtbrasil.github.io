@@ -3,51 +3,76 @@ import { Play, ArrowUpRight, MousePointer2 } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-white overflow-hidden">
+    // AJUSTE: items-start e pt-28 (espaço ideal para o Header de 80px)
+    <section id="home" className="relative min-h-screen flex items-start bg-white overflow-hidden pt-28 md:pt-36">
       
-      {/* Background limpo sem os Blobs */}
+      {/* 1. BACKGROUND LAYER */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" 
+          alt="Tech Background"
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+        <div className="absolute -top-[10%] -right-[10%] w-[600px] h-[600px] bg-blue-50 rounded-full filter blur-[120px] opacity-50 animate-pulse"></div>
+      </div>
+
+      {/* 2. CONTENT LAYER */}
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-        <div className="grid lg:grid-cols-12 gap-16 items-start">
+        {/* AJUSTE: gap reduzido de 16 para 10 para aproximar as colunas */}
+        <div className="grid lg:grid-cols-12 gap-10 items-start">
           
-          {/* COLUNA ESQUERDA: Tipografia Ultra-Bold */}
-          <div className="lg:col-span-8 space-y-10">
+          {/* COLUNA ESQUERDA: Tipografia */}
+          <div className="lg:col-span-8 space-y-8">
             <div className="inline-flex items-center gap-2 bg-black text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase">
               <MousePointer2 size={14} className="text-[#00d4ff]" />
-              Experience the Future
+              Innovation & Strategy
             </div>
 
-            <h1 className="text-7xl md:text-[100px] font-black leading-[0.85] tracking-tighter text-black">
+            <h1 className="text-7xl md:text-[110px] font-black leading-[0.85] tracking-tighter text-black">
               NXT <br />
-              <span className="text-[#0056b3]">LEVEL</span> <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0056b3] to-[#00d4ff]">
+                LEVEL
+              </span> <br />
               DIGITAL.
             </h1>
 
             <div className="flex flex-wrap gap-6 items-center">
-              <button className="group relative bg-black text-white px-10 py-5 rounded-2xl font-bold overflow-hidden transition-all hover:bg-[#0056b3]">
-                <span className="relative z-10 flex items-center gap-2">
-                  Solicitar Orçamento <ArrowUpRight size={20} />
-                </span>
-              </button>
+              <a 
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-black text-white px-10 py-5 rounded-2xl font-bold overflow-hidden transition-all hover:bg-[#0056b3] flex items-center gap-2"
+              >
+                Solicitar Orçamento <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </a>
 
               <button className="flex items-center gap-4 font-bold text-black group">
-                <span className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-gray-50 transition-all">
-                  <Play size={20} fill="black" />
+                <span className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300">
+                  <Play size={20} fill="currentColor" />
                 </span>
-                Assista ao Showreel
+                Showreel 2026
               </button>
             </div>
           </div>
 
-          {/* COLUNA DIREITA: Apenas o texto de apoio e a linha lateral */}
-          <div className="lg:col-span-4 lg:mt-24">
-            <div className="relative pl-8 border-l-4 border-[#0056b3] space-y-8">
+          {/* COLUNA DIREITA: Texto de Apoio */}
+          {/* AJUSTE: mt-10 em vez de mt-32 para subir o bloco de texto lateral */}
+          <div className="lg:col-span-4 mt-10 lg:mt-24">
+            <div className="relative pl-8 border-l-4 border-[#0056b3]">
               <p className="text-2xl text-gray-500 leading-relaxed font-medium">
-                Sincronizamos <span className="text-black font-bold">estratégia</span> e <span className="text-black font-bold">performance</span> para criar produtos que definem categorias.
+                Transformamos complexidade em <span className="text-black font-bold">clareza</span>. Soluções digitais que elevam sua marca ao topo.
               </p>
               
-              <div className="space-y-4">
-                <div className="text-4xl font-black text-black leading-none">98%</div>
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">Satisfação dos Clientes</div>
+              <div className="mt-10 flex gap-10">
+                <div>
+                  <div className="text-4xl font-black text-black">98%</div>
+                  <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Satisfaction</div>
+                </div>
+                <div>
+                  <div className="text-4xl font-black text-[#0056b3]">150+</div>
+                  <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Projects</div>
+                </div>
               </div>
             </div>
           </div>

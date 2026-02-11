@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 
+import sleepHouseImg from "../assets/projects/sleephouse-thumb.jpg";
+import starToolsImg from "../assets/projects/startools-thumb.jpg";
+
 export default function LatestProjects() {
     useEffect(() => {
         // Inicializa o Swiper (Certifique-se de ter o script do Swiper no seu index.html)
@@ -24,26 +27,20 @@ export default function LatestProjects() {
     const projects = [
         {
             title: "Sleep House Marechal",
-            category: "E-commerce & Varejo",
-            image: "https://images.unsplash.com/photo-1505693419148-ad3035ce612d?auto=format&fit=crop&q=80&w=800",
+            category: "Landing Page",
+            image: sleepHouseImg,
             link: "https://sleephousemarechal.com.br/"
         },
         {
             title: "Star Tools Ferramentas",
-            category: "Soluções Industriais",
-            image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+            category: "Site Institucional",
+            image: starToolsImg,
             link: "https://startoolsferramentas.com.br/"
         },
         {
-            title: "Sistema ERP Customizado",
+            title: "Sistema ERP Customizado Sheik Plastic",
             category: "Gestão de Sistemas",
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-            link: "#"
-        },
-        {
-            title: "Portal de Agendamento",
-            category: "Web App",
-            image: "https://images.unsplash.com/photo-1551288049-bbbda5366392?auto=format&fit=crop&q=80&w=800",
             link: "#"
         }
     ];

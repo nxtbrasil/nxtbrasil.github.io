@@ -12,25 +12,25 @@
       font-family: 'Poppins', sans-serif;
     }
   </style>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          blue: { 600: '#2563eb' }
-        }
-      }
-    }
-  }
-</script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'pt',
+      includedLanguages: 'en,es,pt',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false // Evita que a barra do Google apareça sozinha
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </head>
 
 <body>
+<div id="google_translate_element" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"></div>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
